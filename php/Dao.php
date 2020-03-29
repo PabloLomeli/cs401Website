@@ -40,11 +40,12 @@ class Dao {
     }
   }
   
-  public function registerUser($user, $pass) {
+  public function registerUser($user, $pass, $name) {
     $conn = $this->getConnection();
-    $saveQuery = "insert into user (email, password, access) values (:user, :pass, 0)";
+    $saveQuery = "insert into user (email, name, password, access) values (:user, :name, :pass, 0)";
     $q = $conn->prepare($saveQuery);
     $q->bindParam(":user", $user);
+	$q->bindParam(":name", $name);
     $q->bindParam(":pass", $pass);
 	if($q->execute())
 	{

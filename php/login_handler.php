@@ -6,10 +6,12 @@
 	$username = $_POST['username'];
 	$password = $_POST['password'];
 	
+	$_SESSION['email1'] = $username;
+	$_SESSION['pass1'] = $password;
+	
 	if(empty($username) || empty($password))
 	{
-		$_SESSION['auth'] = false;
-		$_SESSION['message'] = $username;
+		$_SESSION['message1'] = $username;
 		header("Location: ../php/login.php");
 	}
 	else
@@ -17,14 +19,12 @@
 		$loginInfo = $dao->checkLogin($username, $password);
 	
 		if ($loginInfo == 1) {
-			$_SESSION['auth'] = true;
-			$_SESSION['message'] = "";
+			$_SESSION['message1'] = "";
 			$_SESSION['currentUser'] = $username;
 			header("Location: ../index.php");
 		} 
 		else {
-			$_SESSION['auth'] = false;
-			$_SESSION['message'] = "Login Unsuccessful";
+			$_SESSION['message1'] = "Login Unsuccessful";
 			header("Location: ../php/login.php");
 		}
 	}

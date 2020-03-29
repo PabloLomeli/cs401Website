@@ -57,4 +57,4 @@
     <h1 class="fluid mainHeading headingStyle">NEW TO EFT?</h1>
     <h6 class="fluid mainTagline textStyle">Welcome to NewToEFT, where all your noob needs are met!</h6>
 	
-  </header>
+</header>
