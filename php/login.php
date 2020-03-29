@@ -15,11 +15,11 @@
 		?>
 		<form action="login_handler.php" method="post">
 			<div>
-				<label for="user">Username:</label>
+				<label for="username">Email:</label>
 				<input type="textbox" name="username" />
 			</div>
 			<div>
-				<label for="pass">Password:</label>
+				<label for="password">Password:</label>
 				<input type="password" name="password" />
 			</div>
 			<div>

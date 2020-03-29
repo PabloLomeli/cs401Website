@@ -14,7 +14,7 @@
 			unset($_SESSION['messsage']);
 			}
 		?>
-		<form action="login_handler.php" method="post">
+		<form action="register_handler.php" method="post">
 			<div>
 				<label for="user">Username:</label>
 				<input type="textbox" name="username" />

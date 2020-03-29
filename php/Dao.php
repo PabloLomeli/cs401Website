@@ -39,4 +39,28 @@ class Dao {
       exit;
     }
   }
+  
+  public function registerUser($user, $pass) {
+    $conn = $this->getConnection();
+    $saveQuery = "select * from user where email = :user and password = :pass";
+    $q = $conn->prepare($saveQuery);
+    $q->bindParam(":user", $user);
+    $q->bindParam(":pass", $pass);
+    try {
+      $q->execute();
+	  $count = $q->rowCount();
+	  if($count == 1)
+	  {
+		return 1;
+	  }
+	  else
+	  {
+		return 0;
+	  }
+	} 
+	catch(Exception $e) {
+      echo print_r($e,1);
+      exit;
+    }
+  }
  }

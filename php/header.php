@@ -2,12 +2,29 @@
 	
 ?>
 
-<a href="php/login.php" class="linkStyle">Login</a> | <a href="php/logout.php" class="linkStyle">Logout</a>
- | <a href="php/register.php" class="linkStyle">Register</a>
+<?php 
+	if (!isset($_SESSION['currentUser'])) {
+      echo "<a href=\"php/login.php\" class=\"linkStyle\">Login</a> |";
+    }
+?>
+
+<?php 
+	if (isset($_SESSION['currentUser'])) {
+      echo "<a href=\"php/logout.php\" class=\"linkStyle\">Logout</a>";
+    }
+?>
+
+
+<?php 
+	if (!isset($_SESSION['currentUser'])) {
+      echo "<a href=\"php/register.php\" class=\"linkStyle\">Register</a>";
+    }
+?>
+
  
 <?php
 	if (isset($_SESSION['currentUser'])) {
-      echo "<span><p class=\"loginUser\">Welcome, {$_SESSION['currentUser']}</p></span>";
+      echo "<span class=\"loginUser textStyle\">Welcome, {$_SESSION['currentUser']}</span>";
     }
 ?>
 

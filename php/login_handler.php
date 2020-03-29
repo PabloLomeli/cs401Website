@@ -3,14 +3,13 @@
 
 	require_once 'Dao.php';
 	$dao = new Dao();
-	
 	$username = $_POST['username'];
 	$password = $_POST['password'];
 	
 	if(empty($username) || empty($password))
 	{
 		$_SESSION['auth'] = false;
-		$_SESSION['message'] = "All fields required";
+		$_SESSION['message'] = $username;
 		header("Location: http://localhost/CS401/php/login.php");
 	}
 	else
