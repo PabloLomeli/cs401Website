@@ -16,7 +16,7 @@
 		?>
 		<form action="register_handler.php" method="post">
 			<div>
-				<label for="user">Username:</label>
+				<label for="user">Email:</label>
 				<input type="textbox" name="username" />
 			</div>
 			<div>

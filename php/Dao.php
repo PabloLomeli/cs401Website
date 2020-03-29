@@ -41,26 +41,12 @@ class Dao {
   }
   
   public function registerUser($user, $pass) {
+    $this->logger->LogDebug("Saving a comment [{$comment}]");
     $conn = $this->getConnection();
-    $saveQuery = "select * from user where email = :user and password = :pass";
+    $saveQuery = "insert into comment (comment, image) values (:comment, :destination)";
     $q = $conn->prepare($saveQuery);
-    $q->bindParam(":user", $user);
-    $q->bindParam(":pass", $pass);
-    try {
-      $q->execute();
-	  $count = $q->rowCount();
-	  if($count == 1)
-	  {
-		return 1;
-	  }
-	  else
-	  {
-		return 0;
-	  }
-	} 
-	catch(Exception $e) {
-      echo print_r($e,1);
-      exit;
-    }
+    $q->bindParam(":comment", $comment);
+    $q->bindParam(":destination", $destination);
+    $q->execute();
   }
  }

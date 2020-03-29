@@ -10,7 +10,7 @@
 	{
 		$_SESSION['auth'] = false;
 		$_SESSION['message'] = $username;
-		header("Location: http://localhost/CS401/php/login.php");
+		header("Location: ../php/login.php");
 	}
 	else
 	{
@@ -20,12 +20,12 @@
 			$_SESSION['auth'] = true;
 			$_SESSION['message'] = "Login Successful.";
 			$_SESSION['currentUser'] = $username;
-			header("Location: http://localhost/CS401/index.php");
+			header("Location: ../index.php");
 		} 
 		else {
 			$_SESSION['auth'] = false;
 			$_SESSION['message'] = "Login Unsuccessful";
-			header("Location: http://localhost/CS401/php/login.php");
+			header("Location: ../php/login.php");
 		}
 	}
 ?>
