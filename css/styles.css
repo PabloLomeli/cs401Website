@@ -28,6 +28,18 @@ p{
 	color: rgba(255,0,0,1.00);
 }
 
+table {
+  width: 100%;
+}
+
+th {
+  height: 50px;
+}
+
+th, td {
+  border-bottom: 1px solid #ddd;
+}
+
 
 /* Link styles*/
 a {
