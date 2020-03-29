@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 ?>
 
 <!doctype html>
@@ -48,6 +49,65 @@ include 'php/header.php';
 <section id="sectionOne" class="fixForm ">
 
 <h2>Some beginner tips will be listed here like loadouts, questing, control buttons that are not explicitly told to the player.</h2>
+
+
+
+</section>
+
+<section id="sectionOne" class="fixForm ">
+
+<h2>Data Tables:</h2>
+<form action="php/table_handler.php" method="post">
+			<div>
+				<label for="statTable">Category:</label>
+				<select name="statTable">
+					<option <?php if(isset($_SESSION['currentTable1']))if($_SESSION['currentTable1'] == 1)echo "selected";?> value="1">Bullets</option>
+					<option <?php if(isset($_SESSION['currentTable1']))if($_SESSION['currentTable1'] == 2)echo "selected";?> value="2">Armor</option>
+					<option <?php if(isset($_SESSION['currentTable1']))if($_SESSION['currentTable1'] == 3)echo "selected";?> value="3">Keys</option>
+				</select>
+			
+				<input type="submit" />
+			</div>
+</form>
+
+<?php 
+if(isset($_SESSION['status1']))
+{
+	echo $_SESSION['status1'];
+}
+
+if(isset($_SESSION['tableArray'])){
+$lines = $_SESSION['tableArray']; 
+		echo "<table><thead><tr><th>Ammo Name</th><th>Ammo Type</th><th>Damage Value</th><th>Pen Power</th><th>Armor Damage</th><th>Fragment Chance</th></tr></thead><tbody>";
+		foreach ($lines as $line) {
+			echo "<tr><td>{$line['ammoName']}</td>";
+			echo "<td>{$line['ammoType']}</td>";
+			echo "<td>{$line['damageVal']}</td>";
+			echo "<td>{$line['penPower']}</td>";
+			echo "<td>{$line['armorDamage']}</td>";
+			echo "<td>{$line['fragmentChance']}</td></tr>";
+		}
+		echo "</tbody></table>";
+}
+/*
+	
+	
+	if(isset($_SESSION['currentTable2']))
+	{
+		$lines = $_SESSION['currentTable']; 
+		echo "<table><thead><tr><th>Ammo Name</th><th>Ammo Type</th><th>Damage Value</th><th>Pen Power</th><th>Armor Damage</th><th>Fragment Chance</th></tr></thead><tbody>";
+		foreach ($lines as $line) {
+			echo "<tr><td>{$line['ammoName']}</td>";
+			echo "<td>{$line['ammoType']}</td>";
+			echo "<td>{$line['damageVal']}</td>";
+			echo "<td>{$line['penPower']}</td>";
+			echo "<td>{$line['armorDamage']}</td>";
+			echo "<td>{$line['fragmentChance']}</td></tr>";
+		}
+		echo "</tbody></table>";
+	}
+*/
+?>
 
 </section>
 </article>

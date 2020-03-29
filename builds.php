@@ -48,8 +48,13 @@ include 'php/header.php';
 <!-- Sign up feature implemented here. -->
 <h2>Get your BUILDS HERE!</h2>
 
+<img src="images/friendlychart1.png" alt="" />
+
+<img src="images/friendlychart2.png" alt="" />
+
 
 </section>
+
 </article>
 
 <!--Primary content area ends here-->

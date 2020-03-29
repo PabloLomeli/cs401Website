@@ -47,19 +47,19 @@ include 'php/header.php';
 <article class="fluid gallery">
 <h2 class="fluid showAreaH2 headingStyle">Current Maps:</h2>
 
-<figure class="fluid tiles zeroMargin_desktop zeroMargin_tablet"> <img id="rollover1" src="images/reserve.png" alt=""/>
+<figure class="fluid tiles zeroMargin_desktop zeroMargin_tablet"> <img id="rollover1" src="" alt=""/>
 
 <figcaption class="textStyle"></figcaption>
 
 </figure>
 
-<figure class="fluid tiles"> <img id="rollover2" src="images/Map.png" alt=""/>
+<figure class="fluid tiles"> <img id="rollover2" src="images/map.jpg" alt=""/>
 
 <figcaption class="textStyle"></figcaption>
 
 </figure>
 
-<figure class="fluid tiles  zeroMargin_tablet"> <img id="rollover3" src="images/factory.jpg" alt=""/>
+<figure class="fluid tiles  zeroMargin_tablet"> <img id="rollover3" src="" alt=""/>
 
 <figcaption class="textStyle"></figcaption>
 

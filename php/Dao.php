@@ -56,4 +56,17 @@ class Dao {
 	  return 0;
     }
   }
+  
+  public function getTable($table) {
+    $conn = $this->getConnection();
+    if(is_null($conn)) {
+      return;
+    }
+    try {
+      return $conn->query("select ammoName, ammoType, damageVal, penPower, armorDamage, fragmentChance from bullets", PDO::FETCH_ASSOC);
+    } catch(Exception $e) {
+      echo print_r($e,1);
+      exit;
+    }
+  }
  }
