@@ -24,7 +24,7 @@ p{
 	margin: 0;
 }
 
-#error {
+.error {
 	color: rgba(255,0,0,1.00);
 }
 

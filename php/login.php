@@ -50,7 +50,7 @@
 		<h1>NewToEFT Login</h1>
 		<?php
 			if (isset($_SESSION['message1'])) {
-			echo "<div id='error'>{$_SESSION['message1']}</div>";
+			echo "<div class=\"error\">{$_SESSION['message1']}</div>";
 			unset($_SESSION['messsage1']);
 			}
 		?>

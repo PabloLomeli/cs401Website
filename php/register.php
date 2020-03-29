@@ -51,7 +51,7 @@
 		Sign up below!</h1>
 		<?php
 			if (isset($_SESSION['message2'])) {
-			echo "<div id='error'>{$_SESSION['message2']}</div>";
+			echo "<div class=\"error\">{$_SESSION['message2']}</div>";
 			unset($_SESSION['messsage2']);
 			}
 		?>
@@ -59,17 +59,17 @@
 			<div>
 				<label for="registerName">Name:</label>
 				<input type="textbox" name="registerName" value="<?php if(isset($_SESSION['name']))echo $_SESSION['name']; ?>" />
-				<span class=""><?php if (isset($_SESSION['errorName'])) echo $_SESSION['errorName']; ?></span>
+				<span class="error"><?php if (isset($_SESSION['errorName'])) echo $_SESSION['errorName']; ?></span>
 			</div>
 			<div>
 				<label for="registerUsername">Email:</label>
 				<input type="textbox" name="registerUsername" value="<?php if(isset($_SESSION['email2']))echo $_SESSION['email2']; ?>" />
-				<span class=""><?php if (isset($_SESSION['errorUser'])) echo $_SESSION['errorUser']; ?></span>
+				<span class="error"><?php if (isset($_SESSION['errorUser'])) echo $_SESSION['errorUser']; ?></span>
 			</div>
 			<div>
 				<label for="registerPassword">Password:</label>
 				<input type="password" name="registerPassword" value="<?php if(isset($_SESSION['pass2']))echo $_SESSION['pass2']; ?>" />
-				<span class=""><?php if (isset($_SESSION['errorPass'])) echo $_SESSION['errorPass']; ?></span>
+				<span class="error"><?php if (isset($_SESSION['errorPass'])) echo $_SESSION['errorPass']; ?></span>
 			</div>
 			<div>
 				<input type="submit" />

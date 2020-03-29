@@ -6,21 +6,23 @@
 	$username = $_POST['username'];
 	$password = $_POST['password'];
 	
+	$email = filter_var($username, FILTER_SANITIZE_EMAIL);
+	
 	$_SESSION['email1'] = $username;
 	$_SESSION['pass1'] = $password;
 	
-	if(empty($username) || empty($password))
+	if(empty($email) || empty($password))
 	{
-		$_SESSION['message1'] = $username;
+		$_SESSION['message1'] = "Missing form fields.";
 		header("Location: ../php/login.php");
 	}
 	else
 	{
-		$loginInfo = $dao->checkLogin($username, $password);
+		$loginInfo = $dao->checkLogin($email, $password);
 	
 		if ($loginInfo == 1) {
 			$_SESSION['message1'] = "";
-			$_SESSION['currentUser'] = $username;
+			$_SESSION['currentUser'] = $email;
 			header("Location: ../index.php");
 		} 
 		else {
