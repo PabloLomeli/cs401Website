@@ -30,7 +30,7 @@ session_start();
 
 <!--Container starts here-->
 
-<div class="gridContainer clearfix"> 
+<div class="gridContainer"> 
 
 <!--Top section here-->
 
