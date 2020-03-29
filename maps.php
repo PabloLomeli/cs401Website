@@ -12,7 +12,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<meta name="keywords" content="GAMER GEAR, gamer glasses, gamer water, gamer air, where can i buy gamer apparel?">
+<meta name="keywords" content="New to EFT? Well you've come to the right website!">
 
 <title>Welcome to NewToEFT.com</title>
 

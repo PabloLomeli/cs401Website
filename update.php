@@ -12,7 +12,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<meta name="keywords" content="GAMER GEAR, gamer glasses, gamer water, gamer air, where can i buy gamer apparel?">
+<meta name="keywords" content="New to EFT? Well you've come to the right website!">
 
 <title>Welcome to NewToEFT.com</title>
 
@@ -64,17 +64,17 @@ Container starts here
       <h2 class="fluid showAreaH2 headingStyle sectionText">The latest update releases from BattleState Game Developers!</h2>
 
       <main id="faqs">
-        <h2 class="sectionText"><a class="faqlink" href="#" >This will need new content</a></h2>
+        <h2 class=""><strong>This will need new content</strong></h2>
         <div>
             <p>This is an intro to v.123213123 and it has killer new updates.
             </p>
         </div>
-        <h2 class="sectionText"><a class ="faqlink" href="#">Previous update that is a bit older</a></h2>
+        <h2 class=""><strong>Previous update that is a bit older</strong></h2>
         <div>
             <p>v.001243123 has a few bugs but its still fun to play!.
             </p>
         </div>
-        <h2 class="sectionText"><a class ="faqlink" href="#">Acient update that came out</a></h2>
+        <h2 class=""><strong>Acient update that came out</strong></h2>
         <div>
             <p>v.0000000000000000001 its basically unplayable but its kinda cool to see where they're going.</p>
         </div>

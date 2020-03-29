@@ -3,13 +3,14 @@
 ?>
 
 <a href="php/login.php" class="linkStyle">Login</a> | <a href="php/logout.php" class="linkStyle">Logout</a>
-<span><p class="loginUser">Welcome, 
+ | <a href="php/register.php" class="linkStyle">Register</a>
+ 
 <?php
 	if (isset($_SESSION['currentUser'])) {
-      echo $_SESSION['currentUser'];
+      echo "<span><p class=\"loginUser\">Welcome, {$_SESSION['currentUser']}</p></span>";
     }
 ?>
-</p></span>
+
 
 <header class="fluid hero heroHeader"> 
 	

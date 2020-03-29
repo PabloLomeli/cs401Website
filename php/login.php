@@ -6,7 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="">
 	</head>
 	<body>
-		<h1>Tarkov Admin Login</h1>
+		<h1>NewToEFT Login</h1>
 		<?php
 			if (isset($_SESSION['message'])) {
 			echo "<div id='error'>{$_SESSION['message']}</div>";

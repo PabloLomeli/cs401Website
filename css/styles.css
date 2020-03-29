@@ -24,6 +24,10 @@ p{
 	margin: 0;
 }
 
+#error {
+	color: rgba(255,0,0,1.00);
+}
+
 
 /* Link styles*/
 a {
