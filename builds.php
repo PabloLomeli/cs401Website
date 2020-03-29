@@ -44,7 +44,7 @@ include 'php/header.php';
 
 <article class="fluid">
 
-<section id="sectionOne" class ="fixForm">
+<section id="sectionOne" class ="">
 <!-- Sign up feature implemented here. -->
 <h2>Get your BUILDS HERE!</h2>
 

@@ -61,7 +61,7 @@ a:hover {
 }
 /* Header & HERO styles*/
 .heroHeader {
-	height: 450px;
+	height: 100%;
 	background-color: rgba(208,207,207,1.00);
 }
 /* Navigation styles*/
@@ -72,8 +72,13 @@ a:hover {
 }
 .topNavLI {
 	text-align: center;
+	width:16%;
 }
 /* Typography styles*/
+.textContainer {
+	padding:0;
+}
+
 .textStyle {
 	font-family: 'montserrat', sans-serif;
 	font-style: normal;
@@ -85,14 +90,14 @@ a:hover {
 	font-size: 32px;
 }
 .mainHeading {
-	color: rgba(255,255,255,1.00);
+	color: rgba(146,146,146,1.00);
 	text-align: center;
 	margin-top: 10%;
 	font-size: 48px;
 }
 .mainTagline {
 	text-align: center;
-	color: rgba(255,255,255,1.00);
+	color: rgba(146,146,146,1.00);
 	font-size: 16px;
 	margin-top: -1%;
 }

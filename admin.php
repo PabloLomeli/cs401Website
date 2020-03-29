@@ -32,7 +32,7 @@ session_start();
 
 <div class="gridContainer"> 
 
-<!--Top section starts here-->
+<!--Top section here-->
 
 <?php
 include 'php/header.php';
@@ -42,24 +42,20 @@ include 'php/header.php';
 
 <!--Primary Container starts here-->
 
-<article class="fluid textContainer">
-<h1 class="fluid mainHeading headingStyle">NEW TO EFT?</h1>
-<h6 class="fluid mainTagline textStyle">Welcome to NewToEFT, where all your noob needs are met!</h6>
+<article class="fluid">
 
-<section id="sectionOne" class="fluid ">
-
-<h2 class="">Latest news:</h2>
-
-<p class="paraContent">Check out this <a href="">crazy build</a> if you would like to be unstoppable!</p>
-
-<p class="paraContent">For veterans that need a reminder on newest bullet types check out this <a href="">chart!</a></p>
+<section id="sectionOne" class ="">
+<!-- Sign up feature implemented here. -->
+<h2>You are in the secret admin page.</h2>
+<p>Additional features for admins to come.</p>
 
 </section>
+
 </article>
 
-<!--Primary content area ends here--> 
+<!--Primary content area ends here-->
 
-<!--Footer starts here -->
+<!--Footer starts here-->
 
 <footer class="fluid footer">
 <section class="fluid secondarySection">

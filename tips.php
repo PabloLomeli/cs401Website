@@ -89,24 +89,6 @@ $lines = $_SESSION['tableArray'];
 		}
 		echo "</tbody></table>";
 }
-/*
-	
-	
-	if(isset($_SESSION['currentTable2']))
-	{
-		$lines = $_SESSION['currentTable']; 
-		echo "<table><thead><tr><th>Ammo Name</th><th>Ammo Type</th><th>Damage Value</th><th>Pen Power</th><th>Armor Damage</th><th>Fragment Chance</th></tr></thead><tbody>";
-		foreach ($lines as $line) {
-			echo "<tr><td>{$line['ammoName']}</td>";
-			echo "<td>{$line['ammoType']}</td>";
-			echo "<td>{$line['damageVal']}</td>";
-			echo "<td>{$line['penPower']}</td>";
-			echo "<td>{$line['armorDamage']}</td>";
-			echo "<td>{$line['fragmentChance']}</td></tr>";
-		}
-		echo "</tbody></table>";
-	}
-*/
 ?>
 
 </section>

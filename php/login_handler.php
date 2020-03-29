@@ -23,6 +23,7 @@
 		if ($loginInfo == 1) {
 			$_SESSION['message1'] = "";
 			$_SESSION['currentUser'] = $email;
+			$_SESSION['admin'] = $dao->checkAdmin($email);
 			header("Location: ../index.php");
 		} 
 		else {

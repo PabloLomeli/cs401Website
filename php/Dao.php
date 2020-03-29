@@ -40,6 +40,29 @@ class Dao {
     }
   }
   
+  public function checkAdmin($user) {
+    $conn = $this->getConnection();
+    $saveQuery = "select access from user where email = :user and access = 1";
+    $q = $conn->prepare($saveQuery);
+    $q->bindParam(":user", $user);
+    try {
+      $q->execute();
+	  $count = $q->rowCount();
+	  if($count == 1)
+	  {
+		return 1;
+	  }
+	  else
+	  {
+		return 0;
+	  }
+	} 
+	catch(Exception $e) { 
+      echo print_r($e,1);
+      exit;
+    }
+  }
+  
   public function registerUser($user, $pass, $name) {
     $conn = $this->getConnection();
     $saveQuery = "insert into user (email, name, password, access) values (:user, :name, :pass, 0)";

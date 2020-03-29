@@ -50,11 +50,21 @@
         <li class="fluid topNavLI"><strong><a href="tips.php" class="linkStyle" title="Nav Link">Tips</a></strong></li>
         
         <li class="fluid topNavLI"><strong><a href="builds.php" class="linkStyle" title="Nav Link">Builds</a></strong></li>
+		
+		<?php
+			if (isset($_SESSION['admin'])) {
+				if($_SESSION['admin'] == 1)
+				{
+					echo "<li class=\"fluid topNavLI\"><strong><a href=\"admin.php\" class=\"linkStyle\" title=\"Nav Link\">Admin</a></strong></li>";
+				}
+			  
+			}
+		?>
+		
       </ul>
 
     </nav>
     
-    <h1 class="fluid mainHeading headingStyle">NEW TO EFT?</h1>
-    <h6 class="fluid mainTagline textStyle">Welcome to NewToEFT, where all your noob needs are met!</h6>
+    
 	
 </header>
