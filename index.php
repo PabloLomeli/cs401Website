@@ -43,7 +43,7 @@ require 'php/header.php>';
 <!--Primary Container starts here-->
 
 <article class="fluid textContainer">
-<img src="logo.png" alt=""/>
+
 <section id="sectionOne" class="fluid ">
 
 <h2 class="sectionText">Latest news:</h2>
