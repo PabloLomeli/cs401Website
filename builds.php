@@ -1,5 +1,5 @@
 <?php
-  session_start();
+session_start();
 ?>
 
 <!doctype html>
@@ -26,77 +26,48 @@
 
 </head>
 
-
-
 <body>
 
-<!--************************************************************************
-
-Container starts here
-
-****************************************************************************-->
+<!--Container starts here-->
 
 <div class="gridContainer clearfix"> 
 
-  <!--************************************************************************
-s
-    Top section here
-
-    ****************************************************************************-->
+<!--Top section here-->
 
 <?php
-	include 'php/header.php>';
+include 'php/header.php>';
 ?>
 
-  
+<!--Top section ends here-->
 
-  <!--************************************************************************
+<!--Primary Container starts here-->
 
-    Primary Container starts here
+<article class="fluid">
 
-    ****************************************************************************-->
-
-  <article class="fluid">
-
-    <section id="sectionOne" class ="fixForm">
+<section id="sectionOne" class ="fixForm">
 <!-- Sign up feature implemented here. -->
-      <h2>Get your BUILDS HERE!</h2>
-    
+<h2>Get your BUILDS HERE!</h2>
 
-    </section>
-  </article>
 
-  <!--Primary content area ends here-->  
+</section>
+</article>
 
-  
+<!--Primary content area ends here-->
 
-  <!--************************************************************************
-
-    Secondary container starts here
-
-    ****************************************************************************-->
-
-  <!--Secondary content section ends here--> 
-
-  
-
-  <!--************************************************************************
-
-    Footer starts here
-
-    ****************************************************************************-->
+<!--Footer starts here-->
 
 <footer class="fluid footer">
 <section class="fluid secondarySection">
-      <p class="contentArea">Copyright © 2020 NewToEFT™</p>
-    </section>
+<p class="contentArea">Copyright © 2020 NewToEFT™</p>
+</section>
 </footer>
 
-  <!--Footer ends here--> 
+<!--Footer ends here--> 
 
 </div>
 
 <!--Container ends here-->
+
 </body>
 </html>
 

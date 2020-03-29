@@ -1,5 +1,5 @@
 <?php
-  session_start();
+session_start();
 ?>
 
 <!doctype html>
@@ -26,104 +26,62 @@
 
 </head>
 
-
-
 <body>
 
-<!--************************************************************************
-
-Container starts here
-
-****************************************************************************-->
+<!--Container starts here-->
 
 <div class="gridContainer clearfix"> 
 
-  <!--************************************************************************
-
-    HERO Section starts here
-
-    ****************************************************************************-->
+<!--Top section here-->
 
 <?php
-	include 'php/header.php>';
+include 'php/header.php>';
 ?>
 
-  <!--HERO section ends here--> 
+<!--Top section ends here-->
 
-  
+<!--rimary Container starts here-->
 
-  <!--************************************************************************
+<article class="fluid textContainer">
+</article>
+<article class="fluid gallery">
+<h2 class="fluid showAreaH2 headingStyle">Current Maps:</h2>
 
-    Primary Container starts here
+<figure class="fluid tiles zeroMargin_desktop zeroMargin_tablet"> <img id="rollover1" src="images/reserve.png" alt=""/>
 
-    ****************************************************************************-->
+<figcaption class="textStyle"></figcaption>
 
-  <article class="fluid textContainer">
-  </article>
-  <article class="fluid gallery">
-  <h2 class="fluid showAreaH2 headingStyle">Current Maps:</h2>
-    
-    <figure class="fluid tiles zeroMargin_desktop zeroMargin_tablet"> <img id="rollover1" src="images/reserve.png" alt=""/>
+</figure>
 
-      <figcaption class="textStyle"></figcaption>
+<figure class="fluid tiles"> <img id="rollover2" src="images/Map.png" alt=""/>
 
-    </figure>
+<figcaption class="textStyle"></figcaption>
 
-    <figure class="fluid tiles"> <img id="rollover2" src="images/Map.png" alt=""/>
+</figure>
 
-      <figcaption class="textStyle"></figcaption>
+<figure class="fluid tiles  zeroMargin_tablet"> <img id="rollover3" src="images/factory.jpg" alt=""/>
 
-    </figure>
+<figcaption class="textStyle"></figcaption>
 
-    <figure class="fluid tiles  zeroMargin_tablet"> <img id="rollover3" src="images/factory.jpg" alt=""/>
+</figure>
+</article>
 
-      <figcaption class="textStyle"></figcaption>
+<!--Primary content area ends here--> 
 
-    </figure>
-  </article>
-  
-  <!--Primary content area ends here--> 
-
-  
-
-  <!--************************************************************************
-
-
-    Gallery starts here - Elements hidden in mobile mode can be revisited by going into manage hidden element mode available in context menu
-
-    ****************************************************************************-->
-
-  <article class="fluid gallery"> </article>
-
-  <!--Gallery ends here--> 
-
-  
-
-  <!--************************************************************************
-
-    Secondary container starts here
-
-    ****************************************************************************-->
-
-  <!--Secondary content section ends here-->
-
-  <!--************************************************************************
-
-    Footer starts here
-
-    ************************************************************************a****-->
+<!--Footer starts here-->
 
 <footer class="fluid footer">
 <section class="fluid secondarySection">
-      <p class="contentArea">Copyright © 2020 NewToEFT™</p>
-    </section>
+<p class="contentArea">Copyright © 2020 NewToEFT™</p>
+</section>
 </footer>
- <!--Footer ends here--> 
+
+<!--Footer ends here--> 
 
 </div>
 
 <!--Container ends here-->
-<script>date();</script>
+
 </body>
 </html>
 

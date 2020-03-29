@@ -1,5 +1,5 @@
 <?php
-  session_start();
+session_start();
 ?>
 
 <!doctype html>
@@ -26,73 +26,43 @@
 
 </head>
 
-
-
 <body>
 
-<!--************************************************************************
-
-Container starts here
-
-****************************************************************************-->
+<!--Container starts here-->
 
 <div class="gridContainer clearfix"> 
 
-  <!--************************************************************************
+<!--Top section here-->
 
-    Top section here
-
-    ****************************************************************************-->
-
- <?php
-	include 'php/header.php>';
+<?php
+include 'php/header.php>';
 ?>
 
-  
+<!--Top section ends here-->
 
-  <!--************************************************************************
+<!--Primary Container starts here-->
 
-    Primary Container starts here
-
-    ****************************************************************************-->
 <!-- Emaillist feature implemented here -->
-  <article class="fluid ">
+<article class="fluid ">
 
-    <section id="sectionOne" class="fixForm ">
+<section id="sectionOne" class="fixForm ">
 
-      <h2>Some beginner tips will be listed here like loadouts, questing, control buttons that are not explicitly told to the player.</h2>
-        
-    </section>
-  </article>
+<h2>Some beginner tips will be listed here like loadouts, questing, control buttons that are not explicitly told to the player.</h2>
 
-  <!--Primary content area ends here-->  
+</section>
+</article>
 
-  
+<!--Primary content area ends here-->  
 
-  <!--************************************************************************
-
-    Secondary container starts here
-
-    ****************************************************************************-->
-
-
-  <!--Secondary content section ends here--> 
-
-  
-
-  <!--************************************************************************
-
-    Footer starts here
-
-    ****************************************************************************-->
+<!--Footer starts here-->
 
 <footer class="fluid footer">
 <section class="fluid secondarySection">
-      <p class="contentArea">Copyright © 2020 NewToEFT™</p>
-    </section>
+<p class="contentArea">Copyright © 2020 NewToEFT™</p>
+</section>
 </footer>
 
-  <!--Footer ends here--> 
+<!--Footer ends here--> 
 
 </div>
 

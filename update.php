@@ -1,5 +1,5 @@
 <?php
-  session_start();
+session_start();
 ?>
 
 <!doctype html>
@@ -26,89 +26,60 @@
 
 </head>
 
-
-
 <body>
 
-<!--************************************************************************
-
-Container starts here
-
-****************************************************************************-->
+<!--Container starts here-->
 
 <div class="gridContainer clearfix"> 
 
-  <!--************************************************************************
-
-    Top section here
-
-    ****************************************************************************-->
+<!--Top section here-->
 
 <?php
-	include 'php/header.php>';
+include 'php/header.php>';
 ?>
 
-  
+<!--Top section ends here-->
 
-  <!--************************************************************************
-
-    Primary Container starts here
-
-    ****************************************************************************-->
+<!--Primary Container starts here-->
 
 <!-- Faq feature implemented here. -->
-  <article class="fluid textContainer">
+<article class="fluid textContainer">
 
-    <section id="sectionOne" class="fluid ">
+<section id="sectionOne" class="fluid ">
 
-      <h2 class="fluid showAreaH2 headingStyle sectionText">The latest update releases from BattleState Game Developers!</h2>
+<h2 class="fluid showAreaH2 headingStyle sectionText">The latest update releases from BattleState Game Developers!</h2>
 
-      <main id="faqs">
-        <h2 class=""><strong>This will need new content</strong></h2>
-        <div>
-            <p>This is an intro to v.123213123 and it has killer new updates.
-            </p>
-        </div>
-        <h2 class=""><strong>Previous update that is a bit older</strong></h2>
-        <div>
-            <p>v.001243123 has a few bugs but its still fun to play!.
-            </p>
-        </div>
-        <h2 class=""><strong>Acient update that came out</strong></h2>
-        <div>
-            <p>v.0000000000000000001 its basically unplayable but its kinda cool to see where they're going.</p>
-        </div>
-        </main>
-    </section>
-  </article>
+<main id="faqs">
+<h2 class=""><strong>This will need new content</strong></h2>
+<div>
+<p>This is an intro to v.123213123 and it has killer new updates.</p>
+</div>
 
-  <!--Primary content area ends here--> 
+<h2 class=""><strong>Previous update that is a bit older</strong></h2>
+<div>
+<p>v.001243123 has a few bugs but its still fun to play!.</p>
+</div>
 
-  
+<h2 class=""><strong>Acient update that came out</strong></h2>
+<div>
+<p>v.0000000000000000001 its basically unplayable but its kinda cool to see where they're going.</p>
+</div>
 
-  <!--************************************************************************
+</main>
+</section>
+</article>
 
-    Secondary container starts here
+<!--Primary content area ends here--> 
 
-    ****************************************************************************-->
-
-  <!--Secondary content section ends here--> 
-
-  
-
-  <!--************************************************************************
-
-    Footer starts here
-
-    ****************************************************************************-->
+<!--Footer starts here-->
 
 <footer class="fluid footer">
 <section class="fluid secondarySection">
-      <p class="contentArea">Copyright © 2020 NewToEFT™</p>
-    </section>
+<p class="contentArea">Copyright © 2020 NewToEFT™</p>
+</section>
 </footer>
 
-  <!--Footer ends here--> 
+<!--Footer ends here--> 
 
 </div>
 

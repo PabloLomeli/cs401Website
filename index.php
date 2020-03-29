@@ -1,5 +1,5 @@
 <?php
-  session_start();
+session_start();
 ?>
 
 <!doctype html>
@@ -12,7 +12,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<meta name="keywords" content="GAMER GEAR, gamer glasses, gamer water, gamer air, where can i buy gamer apparel?">
+<meta name="keywords" content="New to EFT? Well you've come to the right website!">
 
 <title>Welcome to NewToEFT.com</title>
 
@@ -28,62 +28,49 @@
 
 <body>
 
-<!--************************************************************************
-
-Container starts here
-
-****************************************************************************-->
+<!--Container starts here-->
 
 <div class="gridContainer clearfix"> 
 
-  <!--************************************************************************
+<!--Top section starts here-->
 
-    Top section here
-
-    ****************************************************************************-->
- 
 <?php
-	include 'php/header.php>';
+include 'php/header.php>';
 ?>
 
-  <!--************************************************************************
+<!--Top section ends here-->
 
-    Primary Container starts here
+<!--Primary Container starts here-->
 
-    ****************************************************************************-->
-
-  <article class="fluid textContainer">
+<article class="fluid textContainer">
 <img src="logo.png" alt=""/>
-    <section id="sectionOne" class="fluid ">
+<section id="sectionOne" class="fluid ">
 
-      <h2 class="sectionText">Latest news:</h2>
+<h2 class="sectionText">Latest news:</h2>
 
-      <p class="paraContent">Check out this <a href="">crazy build</a> if you would like to be unstoppable!</p>
+<p class="paraContent">Check out this <a href="">crazy build</a> if you would like to be unstoppable!</p>
 
-      <p class="paraContent">For veterans that need a reminder on newest bullet types check out this <a href="">chart!</a></p>
+<p class="paraContent">For veterans that need a reminder on newest bullet types check out this <a href="">chart!</a></p>
 
-    </section>
-  </article>
+</section>
+</article>
 
-  <!--Primary content area ends here--> 
+<!--Primary content area ends here--> 
 
-  <!--************************************************************************
-
-    Footer starts here
-
-    ****************************************************************************-->
+<!--Footer starts here -->
 
 <footer class="fluid footer">
 <section class="fluid secondarySection">
-      <p class="contentArea">Copyright © 2020 NewToEFT™</p>
-    </section>
+<p class="contentArea">Copyright © 2020 NewToEFT™</p>
+</section>
 </footer>
 
-  <!--Footer ends here--> 
+<!--Footer ends here--> 
 
 </div>
 
 <!--Container ends here-->
+
 </body>
 </html>
 
