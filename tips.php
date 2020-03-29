@@ -35,7 +35,7 @@ session_start();
 <!--Top section here-->
 
 <?php
-include 'php/header.php>';
+require 'php/header.php>';
 ?>
 
 <!--Top section ends here-->
