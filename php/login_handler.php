@@ -18,7 +18,7 @@
 	
 		if ($loginInfo == 1) {
 			$_SESSION['auth'] = true;
-			$_SESSION['message'] = "Login Successful.";
+			$_SESSION['message'] = "";
 			$_SESSION['currentUser'] = $username;
 			header("Location: ../index.php");
 		} 

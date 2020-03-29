@@ -34,19 +34,25 @@ class Dao {
 		return 0;
 	  }
 	} 
-	catch(Exception $e) {
+	catch(Exception $e) { 
       echo print_r($e,1);
       exit;
     }
   }
   
   public function registerUser($user, $pass) {
-    $this->logger->LogDebug("Saving a comment [{$comment}]");
     $conn = $this->getConnection();
-    $saveQuery = "insert into comment (comment, image) values (:comment, :destination)";
+    $saveQuery = "insert into user (email, password, access) values (:user, :pass, 0)";
     $q = $conn->prepare($saveQuery);
-    $q->bindParam(":comment", $comment);
-    $q->bindParam(":destination", $destination);
-    $q->execute();
+    $q->bindParam(":user", $user);
+    $q->bindParam(":pass", $pass);
+	if($q->execute())
+	{
+		return 1;
+	} 
+	else
+	{
+	  return 0;
+    }
   }
  }

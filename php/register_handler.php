@@ -4,29 +4,60 @@
 	require_once 'Dao.php';
 	$dao = new Dao();
 	
-	$username = $_POST['username'];
-	$password = $_POST['password'];
+	$username = $_POST['registerUsername'];
+	$password = $_POST['registerPassword'];
 	
+	$email = filter_var($username, FILTER_SANITIZE_EMAIL);
+	
+	$validuser = 1;
+	$validpass = 1;
 	if(empty($username) || empty($password))
 	{
+		$validuser = 0;
+		$validpass = 0;
 		$_SESSION['auth'] = false;
-		$_SESSION['message'] = "All fields required";
-		header("Location: http://localhost/CS401/php/register.php");
+		$_SESSION['message'] = "Register Unsuccessful.";
+		header("Location: ../php/register.php");
+	}
+	
+	if (!filter_var($email,FILTER_VALIDATE_EMAIL) && strlen($email) < 256) {
+		$_SESSION['errorUser'] = "Please Enter Valid Email ID";
+		$validuser = 0;
 	}
 	else
 	{
-		$loginInfo = $dao->checkLogin($username, $password);
+		$_SESSION['errorUser'] = "";
+		$validuser = 1;
+	}
+	if(strlen($password) < 6 && strlen($password) < 64) {
+		$_SESSION['errorPass'] = "Password must be minimum of 6 characters";
+		$validpass = 0;
+	}
+	else
+	{
+		$_SESSION['errorPass'] = "";
+		$validpass = 1;
+	}
+	if($validuser == 1 && $validpass == 1)
+	{
+		$register = $dao->registerUser($email, $password);
 	
-		if ($loginInfo == 1) {
+		if ($register == 1) {
 			$_SESSION['auth'] = true;
-			$_SESSION['message'] = "Register Successful.";
-			$_SESSION['currentUser'] = $username;
-			header("Location: http://localhost/CS401/index.php");
+			$_SESSION['message'] = "";
+			$_SESSION['justRegistered'] = 1;
+			header("Location: ../index.php");
+			
 		} 
 		else {
 			$_SESSION['auth'] = false;
-			$_SESSION['message'] = "Login Unsuccessful";
-			header("Location: http://localhost/CS401/php/register.php");
+			$_SESSION['message'] = "Email already exists.";
+			header("Location: ../php/register.php");
 		}
+	}
+	else {
+			$_SESSION['auth'] = false;
+			$_SESSION['message'] = "Register Unsuccessful.";
+			header("Location: ../php/register.php");
 	}
 ?>

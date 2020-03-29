@@ -17,11 +17,13 @@
 		<form action="register_handler.php" method="post">
 			<div>
 				<label for="user">Email:</label>
-				<input type="textbox" name="username" />
+				<input type="textbox" name="registerUsername" value=""/>
+				<span class=""><?php if (isset($_SESSION['errorUser'])) echo $_SESSION['errorUser']; ?></span>
 			</div>
 			<div>
 				<label for="pass">Password:</label>
-				<input type="password" name="password" />
+				<input type="password" name="registerPassword" value=""/>
+				<span class=""><?php if (isset($_SESSION['errorPass'])) echo $_SESSION['errorPass']; ?></span>
 			</div>
 			<div>
 				<input type="submit" />

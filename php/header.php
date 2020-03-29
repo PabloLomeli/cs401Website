@@ -26,6 +26,10 @@
 	if (isset($_SESSION['currentUser'])) {
       echo "<span class=\"loginUser textStyle\">Welcome, {$_SESSION['currentUser']}</span>";
     }
+	if (isset($_SESSION['justRegistered'])) {
+      echo "<span class=\"loginUser textStyle\">Thanks for registering!</span>";
+	  unset($_SESSION['justRegistered']);
+    }
 ?>
 
 
