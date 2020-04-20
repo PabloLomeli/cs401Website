@@ -84,6 +84,20 @@ a:visited {
 a:hover {
 	color: rgba(0,0,0,1.00);
 }
+
+a:hover.currentPage {
+	color: rgba(360,360,360,1.00);
+}
+.linkStyle.currentPage {
+	font-size: 28px;
+	color: rgba(0,0,0,1.00);
+	font-family: "Neusa W00 DemiBold" !important;
+	font-style: normal;
+	font-weight: 400;
+	text-decoration: none;	
+	text-align: left;
+}
+
 .linkStyle {
 	font-size: 28px;
 	color: rgba(146,146,146,1.00);

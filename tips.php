@@ -1,5 +1,8 @@
 <?php
 session_start();
+
+$_SESSION['currentPage'] = "tips";
+
 ?>
 
 <!doctype html>

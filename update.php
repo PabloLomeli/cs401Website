@@ -1,5 +1,8 @@
 <?php
 session_start();
+
+$_SESSION['currentPage'] = "update";
+
 ?>
 
 <!doctype html>
@@ -34,7 +37,7 @@ session_start();
 
 <div class="gridContainer"> 
 
-<!--Top section here-->
+<!--Top section starts here-->
 
 <?php
 include 'php/header.php';

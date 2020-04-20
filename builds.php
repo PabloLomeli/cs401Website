@@ -1,5 +1,8 @@
 <?php
 session_start();
+
+$_SESSION['currentPage'] = "builds";
+
 ?>
 
 <!doctype html>

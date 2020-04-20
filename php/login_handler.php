@@ -18,7 +18,9 @@
 	}
 	else
 	{
-		$loginInfo = $dao->checkLogin($email, $password);
+		$salt = "eftisfun";
+		$epassword = hash('sha256', $password . $salt);
+		$loginInfo = $dao->checkLogin($email, $epassword);
 	
 		if ($loginInfo == 1) {
 			$_SESSION['message1'] = "";

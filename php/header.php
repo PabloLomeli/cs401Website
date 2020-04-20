@@ -41,21 +41,35 @@
     <!-- The navigation links-->
     <nav class="fluid topNav">
       <ul class="fluid fluidList topNavUl" name="topNavListBox">
-        <li class="fluid topNavLI"><strong><a href="index.php" class="linkStyle" title="Nav Link">Home</a></strong></li>
-        
-        <li class="fluid topNavLI"><strong><a href="update.php" class="linkStyle" title="Nav Link">Update</a></strong></li>
-        
-        <li class="fluid topNavLI"><strong><a href="maps.php" class="linkStyle" title="Nav Link">Maps</a></strong></li>
-        
-        <li class="fluid topNavLI"><strong><a href="tips.php" class="linkStyle" title="Nav Link">Tips</a></strong></li>
-        
-        <li class="fluid topNavLI"><strong><a href="builds.php" class="linkStyle" title="Nav Link">Builds</a></strong></li>
-		
+		<!-- home -->
+		<?php if(isset($_SESSION['currentPage']) && !strcmp($_SESSION['currentPage'], "index")){echo "<li class=\"fluid topNavLI\"><strong><a href=\"index.php\" class=\"linkStyle currentPage\" title=\"Nav Link\">Home</a></strong></li>";}
+		else
+			echo "<li class=\"fluid topNavLI\"><strong><a href=\"index.php\" class=\"linkStyle\" title=\"Nav Link\">Home</a></strong></li>"; ?>
+		<!-- update -->
+        <?php if(isset($_SESSION['currentPage']) && !strcmp($_SESSION['currentPage'], "update")){echo "<li class=\"fluid topNavLI\"><strong><a href=\"update.php\" class=\"linkStyle currentPage\" title=\"Nav Link\">Update</a></strong></li>";}
+		else
+			echo "<li class=\"fluid topNavLI\"><strong><a href=\"update.php\" class=\"linkStyle\" title=\"Nav Link\">Update</a></strong></li>"; ?>
+		<!-- maps -->
+        <?php if(isset($_SESSION['currentPage']) && !strcmp($_SESSION['currentPage'], "maps")){echo "<li class=\"fluid topNavLI\"><strong><a href=\"maps.php\" class=\"linkStyle currentPage\" title=\"Nav Link\">Maps</a></strong></li>";}
+		else
+			echo "<li class=\"fluid topNavLI\"><strong><a href=\"maps.php\" class=\"linkStyle\" title=\"Nav Link\">Maps</a></strong></li>"; ?>
+		<!-- tips -->
+        <?php if(isset($_SESSION['currentPage']) && !strcmp($_SESSION['currentPage'], "tips")){echo "<li class=\"fluid topNavLI\"><strong><a href=\"tips.php\" class=\"linkStyle currentPage\" title=\"Nav Link\">Tips</a></strong></li>";}
+		else
+			echo "<li class=\"fluid topNavLI\"><strong><a href=\"tips.php\" class=\"linkStyle\" title=\"Nav Link\">Tips</a></strong></li>"; ?>
+		<!-- builds -->
+        <?php if(isset($_SESSION['currentPage']) && !strcmp($_SESSION['currentPage'], "builds")){echo "<li class=\"fluid topNavLI\"><strong><a href=\"builds.php\" class=\"linkStyle currentPage\" title=\"Nav Link\">Builds</a></strong></li>"; }
+		else
+			echo "<li class=\"fluid topNavLI\"><strong><a href=\"builds.php\" class=\"linkStyle\" title=\"Nav Link\">Builds</a></strong></li>"; ?>
+		<!--admin-->
 		<?php
 			if (isset($_SESSION['admin'])) {
 				if($_SESSION['admin'] == 1)
 				{
-					echo "<li class=\"fluid topNavLI\"><strong><a href=\"admin.php\" class=\"linkStyle\" title=\"Nav Link\">Admin</a></strong></li>";
+					if(isset($_SESSION['currentPage']) && !strcmp($_SESSION['currentPage'], "admin")){echo "<li class=\"fluid topNavLI\"><strong><a href=\"admin.php\" class=\"linkStyle currentPage\" title=\"Nav Link\">Admin</a></strong></li>"; }
+					else
+						echo "<li class=\"fluid topNavLI\"><strong><a href=\"admin.php\" class=\"linkStyle\" title=\"Nav Link\">Admin</a></strong></li>";
+					
 				}
 			  
 			}

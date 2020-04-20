@@ -59,7 +59,10 @@
 	}
 	if($validuser == 1 && $validpass == 1 && $validname == 1)
 	{
-		$register = $dao->registerUser($email, $password, $name);
+		$salt = "eftisfun";
+
+		$epassword = hash('sha256', $password . $salt);
+		$register = $dao->registerUser($email, $epassword, $name);
 	
 		if($register == 1) {
 			$_SESSION['message2'] = "";

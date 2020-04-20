@@ -1,5 +1,15 @@
 <?php
 session_start();
+
+if(isset($_SESSION['admin']) && $_SESSION['admin'] = 1)
+{
+	$_SESSION['currentPage'] = "admin";
+}
+else
+{
+	header("Location: php/login.php");
+}
+
 ?>
 
 <!doctype html>
