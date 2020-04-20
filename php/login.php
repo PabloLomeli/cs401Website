@@ -48,20 +48,24 @@
 <section id="sectionOne" class="fluid ">
 
 		<h1>NewToEFT Login</h1>
+		<div class="newFont">
 		<?php
 			if (isset($_SESSION['message1'])) {
 			echo "<div class=\" error \">{$_SESSION['message1']}</div>";
 			unset($_SESSION['messsage1']);
 			}
 		?>
+		</div>
 		<form class="newFont" action="login_handler.php" method="post">
 			<div>
 				<label for="username">Email:</label>
 				<input type="textbox" name="username" value="<?php if(isset($_SESSION['email1'])) echo $_SESSION['email1']; ?>" />
+				<span class="error"><?php if (isset($_SESSION['errorEmail'])) echo $_SESSION['errorEmail']; ?></span>
 			</div>
 			<div>
 				<label for="password">Password:</label>
 				<input type="password" name="password" value="<?php if(isset($_SESSION['pass1'])) echo $_SESSION['pass1']; ?>" />
+				<span class="error"><?php if (isset($_SESSION['errorLPass'])) echo $_SESSION['errorLPass']; ?></span>
 			</div>
 			<div>
 				<input class="newFont" type="submit" />

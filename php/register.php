@@ -49,13 +49,15 @@
 
 		<h1>Want to be part of our updates news letters?
 		Sign up below!</h1>
+		<div class="newFont">
 		<?php
 			if (isset($_SESSION['message2'])) {
-			echo "<div class=\"error webFont\">{$_SESSION['message2']}</div>";
+			echo "<div class=\"error \">{$_SESSION['message2']}</div>";
 			unset($_SESSION['messsage2']);
 			}
 		?>
-		<form action="register_handler.php" method="post">
+		</div>
+		<form class="newFont" action="register_handler.php" method="post">
 			<div>
 				<label class="newFont" for="registerName">Name:</label>
 				<input type="textbox" name="registerName" value="<?php if(isset($_SESSION['name']))echo $_SESSION['name']; ?>" />

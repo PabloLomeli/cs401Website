@@ -24,13 +24,12 @@
 		$validpass = 0;
 		$validname = 0;
 		$_SESSION['message2'] = "Register Unsuccessful.";
-		$_SESSION['errorName'] = "Please Enter Valid Name.";
-		$_SESSION['errorUser'] = "Please Enter Valid Email.";
+		$_SESSION['errorName'] = "Please Enter A Name.";
+		$_SESSION['errorUser'] = "Please Enter A Email.";
 		$_SESSION['errorPass'] = "Password must be minimum of 6 characters.";
 		header("Location: ../php/register.php");
 	}
-	
-	if(!preg_match("/^[a-zA-Z ]*$/",$name)  || strlen($name) > 100) {
+	if(!preg_match("/^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/i", $name)  || strlen($name) > 100) {
 		$_SESSION['errorName'] = "Please Enter Valid Name.";
 		$validname = 0;
 	}

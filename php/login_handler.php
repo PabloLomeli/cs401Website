@@ -14,6 +14,22 @@
 	if(empty($email) || empty($password))
 	{
 		$_SESSION['message1'] = "Missing form fields.";
+		$_SESSION['errorEmail'] = "Please Enter An Email";
+		if(!filter_var($email, FILTER_VALIDATE_EMAIL))
+		{
+			$_SESSION['errorEmail'] = "Enter a valid Email.";
+		}
+		else
+		{
+			$_SESSION['errorEmail'] = "";
+		}
+		$_SESSION['errorLPass'] = "Please Enter A Password";
+		header("Location: ../php/login.php");
+	}
+	else if(!filter_var($email, FILTER_VALIDATE_EMAIL) && !empty($password))
+	{
+		$_SESSION['errorEmail'] = "Enter a valid Email.";
+		$_SESSION['errorLPass'] = "";
 		header("Location: ../php/login.php");
 	}
 	else
@@ -24,12 +40,16 @@
 	
 		if ($loginInfo == 1) {
 			$_SESSION['message1'] = "";
+			$_SESSION['errorLPass'] = "";
+			$_SESSION['errorEmail'] = "";
 			$_SESSION['currentUser'] = $email;
 			$_SESSION['admin'] = $dao->checkAdmin($email);
 			header("Location: ../index.php");
 		} 
 		else {
-			$_SESSION['message1'] = "Login Unsuccessful";
+			$_SESSION['message1'] = "Login Unsuccessful, email or password incorrect.";
+			$_SESSION['errorLPass'] = "";
+			$_SESSION['errorEmail'] = "";
 			header("Location: ../php/login.php");
 		}
 	}
