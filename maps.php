@@ -27,7 +27,11 @@ $_SESSION['currentPage'] = "maps";
 
 <link href="css/styles.css" rel="stylesheet" type="text/css">
 
-<link rel='icon' href='images/favicon.ico' type='image/x-icon'/ >
+<script src="javascript/jquery-3.5.0.js"></script>
+
+<script src="javascript/myJs.js"></script>
+
+<link rel='icon' href='images/favicon.ico' type='image/x-icon'>
 
 </head>
 
@@ -47,30 +51,23 @@ include 'php/header.php';
 
 <!--rimary Container starts here-->
 
-<article class="fluid textContainer">
-</article>
-<article class="fluid gallery">
+<article class="fluid extraPadding">
 <h2 class="fluid showAreaH2 headingStyle">Current Maps:</h2>
 
-<figure class="fluid tiles zeroMargin_desktop zeroMargin_tablet"> <img id="rollover1" src="" alt=""/>
+<img id="mainImage" src="images/map.jpg" />
+<hr>
+<div id="divId">
+	<img class="jqImgStyle" src="images/factory.jpg" />
+	<img class="jqImgStyle" src="images/customs.png" />
+	<img class="jqImgStyle" src="images/interchange.jpg" />
+	<img class="jqImgStyle" src="images/labs.png" />
+	<img class="jqImgStyle" src="images/reserve.png" />
+	<img class="jqImgStyle" src="images/shoreline.jpg" />
+	<img class="jqImgStyle" src="images/woods.png"  />
+</div>
 
-<figcaption class="textStyle"></figcaption>
 
-</figure>
-
-<figure class="fluid tiles"> <img id="rollover2" src="images/map.jpg" alt=""/>
-
-<figcaption class="textStyle"></figcaption>
-
-</figure>
-
-<figure class="fluid tiles  zeroMargin_tablet"> <img id="rollover3" src="" alt=""/>
-
-<figcaption class="textStyle"></figcaption>
-
-</figure>
 </article>
-
 <!--Primary content area ends here--> 
 
 <!--Footer starts here-->
