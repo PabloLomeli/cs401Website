@@ -1,6 +1,5 @@
 <?php
 session_start();
-
 ?>
 
 <!doctype html>
@@ -16,6 +15,8 @@ session_start();
 <meta name="keywords" content="New to EFT? Well you've come to the right website!">
 
 <title>Welcome to NewToEFT.com</title>
+
+<link href="//db.onlinewebfonts.com/c/c05a0e2ed6cec31b7500e45412ecb352?family=NeusaW00-DemiBold" rel="stylesheet" type="text/css"/>
 
 <link href="css/boilerplate.css" rel="stylesheet" type="text/css">
 
@@ -44,7 +45,7 @@ include 'php/header.php';
 <!--Primary Container starts here-->
 
 <!-- Emaillist feature implemented here -->
-<article class="fluid ">
+<article class="fluid gallery">
 
 <section id="sectionOne" class="fixForm ">
 
@@ -54,26 +55,26 @@ include 'php/header.php';
 
 </section>
 
-<section id="sectionOne" class="fixForm ">
-
+<section id="sectionTwo" class="fixForm ">
+ 
 <h2>Data Tables:</h2>
 <form action="php/table_handler.php" method="post">
-			<div>
-				<label for="statTable">Category:</label>
-				<select name="statTable">
-					<option <?php if(isset($_SESSION['currentTable1']))if($_SESSION['currentTable1'] == 1)echo "selected";?> value="1">Bullets</option>
+			<div class="newFont">
+				<label class="newFont"  for="statTable">Category:</label>
+				<select class="newFont" name="statTable">
+					<option  <?php if(isset($_SESSION['currentTable1']))if($_SESSION['currentTable1'] == 1)echo "selected";?> value="1">Bullets</option>
 					<option <?php if(isset($_SESSION['currentTable1']))if($_SESSION['currentTable1'] == 2)echo "selected";?> value="2">Armor</option>
 					<option <?php if(isset($_SESSION['currentTable1']))if($_SESSION['currentTable1'] == 3)echo "selected";?> value="3">Keys</option>
 				</select>
 			
-				<input type="submit" />
+				<input class="newFont"  type="submit" />
 			</div>
 </form>
 
 <?php 
 if(isset($_SESSION['status1']))
 {
-	echo $_SESSION['status1'];
+	echo "<p class=\"newFont\" >{$_SESSION['status1']}</p>";
 }
 
 if(isset($_SESSION['tableArray'])){
@@ -90,7 +91,6 @@ $lines = $_SESSION['tableArray'];
 		echo "</tbody></table>";
 }
 ?>
-
 </section>
 </article>
 

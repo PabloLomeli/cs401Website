@@ -16,13 +16,15 @@ session_start();
 
 <title>Welcome to NewToEFT.com</title>
 
+<link href="//db.onlinewebfonts.com/c/c05a0e2ed6cec31b7500e45412ecb352?family=NeusaW00-DemiBold" rel="stylesheet" type="text/css">
+
 <link href="css/boilerplate.css" rel="stylesheet" type="text/css">
 
 <link href="css/responsive.css" rel="stylesheet" type="text/css">
 
 <link href="css/styles.css" rel="stylesheet" type="text/css">
 
-<link rel='icon' href='images/favicon.ico' type='image/x-icon'/ >
+<link rel='icon' href='images/favicon.ico' type='image/x-icon'>
 
 </head>
 

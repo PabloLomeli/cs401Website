@@ -16,6 +16,8 @@ session_start();
 
 <title>Welcome to NewToEFT.com</title>
 
+<link href="//db.onlinewebfonts.com/c/c05a0e2ed6cec31b7500e45412ecb352?family=NeusaW00-DemiBold" rel="stylesheet" type="text/css"/>
+
 <link href="css/boilerplate.css" rel="stylesheet" type="text/css">
 
 <link href="css/responsive.css" rel="stylesheet" type="text/css">
@@ -44,7 +46,7 @@ include 'php/header.php';
 
 <article class="fluid textContainer">
 <h1 class="fluid mainHeading headingStyle">NEW TO EFT?</h1>
-<h6 class="fluid mainTagline textStyle">Welcome to NewToEFT, where all your noob needs are met!</h6>
+<h1 class="fluid mainTagline textStyle">Welcome to NewToEFT, where all your noob needs are met!</h1>
 
 <section id="sectionOne" class="fluid ">
 
